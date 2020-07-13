@@ -5,7 +5,7 @@ def main():
     st.markdown("<h3 style='color:blue;font-weight:bold;'><u>About</h3>", unsafe_allow_html=True)
     st.subheader('CODE FOR A BRIGHTER TOMORROW')
 
-    st.write('IBM Hack Challenge 2020 is all about coding for a cause. It’s about finding solutions to problems '
+    st.write('IBM Hack Challenge 2020 is all about _coding for a cause_. It’s about finding solutions to problems '
              'plaguing society today. It is an opportunity to showcase your coding talent, learn new technologies and '
              'build an efficiently working solution.')
 
