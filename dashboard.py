@@ -12,22 +12,34 @@ NEU_COLOR = 'rgb(97,97,97)'
 
 def main():
 
-    st.subheader('Sentiment Analysis Dashboard')
+    st.markdown('<h4>NOTE: Conventions used in the project:</h4>'
+                '<h4>1. Shade of green to represent <i>Positive</i> sentiment</h4>'
+                '<h4>2. Shade of red to represent <i>Negative</i> sentiment</h4>'
+                '<h4>3. Shade of grey to represent <i>Neutral</i> sentiment</h4><br>', unsafe_allow_html=True)
+    # st.write('')
+    # st.markdown('<br>', unsafe_allow_html=True)
+    # st.write('')
+    # # st.markdown('<br>', unsafe_allow_html=True)
+    # st.write('2. Shade of green to represent _Negative_ sentiment')
+    # # st.markdown('<br>', unsafe_allow_html=True)
+    # st.write('2. Shade of grey to represent _Neutral_ sentiment')
 
+
+    st.subheader('Sentiment Analysis Dashboard')
     fig = make_subplots(
         rows=2, cols=2,
         specs=[[{"type": "xy"}, {"type": "xy"}],
                [{"type": "domain"}, {"type": "xy"}]],
-        vertical_spacing=0.2,
+        vertical_spacing=0.25,
         horizontal_spacing=0.2,
-        subplot_titles=("Month-wise Analysis", "Day-wise Analysis", "Overall Analysis", "Phase-wise Analysis")
+        subplot_titles=("Month-wise Analysis", "Day-wise Analysis", "Overall Analysis", "Phase-wise Analysis"),
     )
     # Month wise bar plot
     # Positive bars
     labels = ['March', 'April', 'May', 'June', 'July']
     fig.add_trace(go.Bar(y=[30805, 43042, 29736, 82452, 60975],
                          x=labels,
-                         # xaxis_title='Month',
+                         # xaxis='x',
                          marker_color='rgb(42,128,97)',
                          hovertemplate="%{label}: %{y} positive tweets"
                          # hovertext=['{y} Positive tweets', 'Tweet count April', '19% market share',
@@ -89,6 +101,13 @@ def main():
                   row=2, col=2)
 
     fig.update_layout(height=650, width=850, showlegend=False)
+
+    fig['layout']['xaxis']['title'] = 'Months'
+    fig['layout']['xaxis2']['title'] = 'Days (March 01 to June 26)'
+    fig['layout']['yaxis']['title'] = 'Number of Tweets'
+    fig['layout']['yaxis2']['title'] = 'Number of Tweets'
+    fig['layout']['xaxis3']['title'] = 'Phase'
+    fig['layout']['yaxis3']['title'] = 'Number of Tweets'
 
     st.plotly_chart(fig)
 

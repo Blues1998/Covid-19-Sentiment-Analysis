@@ -25,7 +25,14 @@ st.sidebar.header('Pick a page')
 page_choice = st.sidebar.selectbox('', page_options)
 
 if page_choice == 'About':
-    about.main()
+
+    st.sidebar.header('About ')
+    about_options = ['IBM HACK Challenge?', 'Sentiment Analysis?']
+    about_choice = st.sidebar.radio('What is',
+                                    about_options,
+                                    index=0)
+
+    about.main(about_choice)
 
     st.sidebar.subheader('Authors')
     st.sidebar.markdown("### [Animesh Singh]")

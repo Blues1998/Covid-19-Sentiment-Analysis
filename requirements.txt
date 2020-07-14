@@ -2,3 +2,4 @@ streamlit
 plotly
 pydeck
 Pillow
+vaderSentiment
