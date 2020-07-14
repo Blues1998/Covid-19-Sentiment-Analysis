@@ -34,7 +34,9 @@ def main(choice):
 
         analyzer = SentimentIntensityAnalyzer()
         vs = analyzer.polarity_scores(text)
-        st.write('Sentiment output = ', vs['compound'])
+        score = vs['compound']
+        st.write('Sentiment output = {}  \n'
+                 '{} text predicted'.format(score, 'Negative' if score < 0.1 else 'Positive' if score > 0.1 else 'Neutral'))
         st.markdown('<br>', unsafe_allow_html=True)
         st.write('A positive value above means the entered text is classified as a _positive_ text. '
                  'Similarly, a negative value means the text entered is _negative_ and a value close to 0 '
