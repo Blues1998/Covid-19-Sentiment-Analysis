@@ -35,9 +35,9 @@ if page_choice == 'About':
     about.main(about_choice)
 
     st.sidebar.subheader('Authors')
-    st.sidebar.markdown("### [Animesh Singh]")
+    st.sidebar.markdown("### [Animesh Singh](https://www.linkedin.com/in/animesh-singh-profile/)")
     st.sidebar.info('B.Tech, IT, 3rd year - KIET Group of Institutions')
-    st.sidebar.markdown("### [Aaditya Kapoor]")
+    st.sidebar.markdown("### [Aaditya Kapoor](https://www.linkedin.com/in/aadityakapoor06/)")
     st.sidebar.info('B.Tech, CSE, 4th year - Galgotias University')
 
 elif page_choice == 'Plots':
@@ -109,9 +109,9 @@ elif page_choice == 'Plots':
 else:
     dashboard.main()
     st.sidebar.subheader('Authors')
-    st.sidebar.markdown("### [Animesh Singh]")
+    st.sidebar.markdown("### [Animesh Singh](https://www.linkedin.com/in/animesh-singh-profile/)")
     st.sidebar.info('B.Tech, IT, 3rd year - KIET Group of Institutions')
-    st.sidebar.markdown("### [Aaditya Kapoor]")
+    st.sidebar.markdown("### [Aaditya Kapoor](https://www.linkedin.com/in/aadityakapoor06/)")
     st.sidebar.info('B.Tech, CSE, 4th year - Galgotias University')
 # Displaying plots from various files
 
