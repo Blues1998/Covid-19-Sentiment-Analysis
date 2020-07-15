@@ -70,7 +70,7 @@ In this project, we have used the VADER Sentiment Analysis tool for classifying 
 
 # Project report and presentation
 They are stored in the docs/ folder of this repo <br>
-- Check out the ![Report!](https://github.com/Blues1998/Covid-19-Sentiment-Analysis/blob/master/docs/FINAL%20PROJECT%20REPORT.docx)
+- Check out the ![Report!](https://github.com/Blues1998/Covid-19-Sentiment-Analysis/blob/master/docs/FINAL%20PROJECT%20REPORT.pdf)
 - or the ![Presentation!](https://github.com/Blues1998/Covid-19-Sentiment-Analysis/blob/master/docs/IBM_Hack_Challenge_2020_PPT.pptx)
 
 
