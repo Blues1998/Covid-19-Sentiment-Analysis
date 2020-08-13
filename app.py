@@ -35,7 +35,7 @@ if page_choice == 'About':
     about.main(about_choice)
 
     st.sidebar.subheader('Authors')
-    st.sidebar.markdown("### [Animesh Singh](https://www.linkedin.com/in/animesh-singh-profile/)")
+    st.sidebar.markdown("### [Animesh Singh](https://www.blues1998.github.io)")
     st.sidebar.info('B.Tech, IT, 3rd year - KIET Group of Institutions')
     st.sidebar.markdown("### [Aaditya Kapoor](https://www.linkedin.com/in/aadityakapoor06/)")
     st.sidebar.info('B.Tech, CSE, 4th year - Galgotias University')
